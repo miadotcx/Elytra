@@ -1,0 +1,25 @@
+main: cx.mia.elytra.App
+
+name: "Elytra"
+description: "A Minecraft v Discord crosstalk tool."
+website: https://www.github.com/miadotcx/Elytra
+authors: miacx
+api-version: 1.8
+
+
+version: '@project.version@'
+
+softdepend: [PlaceholderAPI, Vault]
+
+commands:
+  elytra:
+    description: "Displays plugin usage."
+    usage: "/elytra [subcommand]"
+    aliases: ["l"]
+    permission: "elytra.help"
+
+permissions:
+  elytra.help:
+    description: "Allows the user to display plugin usage."
+    default: true
+
